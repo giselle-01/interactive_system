@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!--Metaetiquetas donde encontramos información del autor, estilos, y otros detalles-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="See what message we have for you just putting your name and age in here">
-    <meta name="keywords" content="message, age, name, system">
+    <meta name="description" content="Descubre el mensaje que tenemos para ti, solo con tu nombre y edad.">
+    <meta name="keywords" content="mensaje, edad, nombre, sistema">
     <meta name="sitedomain" content="aca pones la url del sitio o del github">
     <meta name="organization" content="aca poner tu usuario de github">
     <meta name="author" content="Giselle Andrea Palencia Toro">
@@ -19,20 +21,26 @@
     <title>Iterative Message System</title>
 </head>
 <body>
+
+<!--Usamos un header para dar la bienvenida al usuario-->
     <header>
-        <h1>Welcome to the Interative Message System</h1>
+        <h1>Bienvenido al Sistema Interactivo de Mensajes</h1>
     </header>
 
+<!--Aquí va todo el contenido principal-->
     <main>
-        <article>
-            <h2>Please enter your name and your age here</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Ex: Alex">
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" placeholder="Ex: 18" min="0">
+<!--Tarjeta o bloque donde se ejecutará el sistema, aquí están las cajas de texto y botones-->
+        <article class="card">
+            <h2>Por favor ingrese su nombre y su edad aquí</h2>
 
-            <button id="btn-send">Send</button>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Ej: Alex">
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" placeholder="Ej: 18" min="0">
+
+            <button id="btn-send">Enviar</button>
 
             <section class="result" id="result"></section>
         </article>
@@ -42,6 +50,7 @@
         <h3>© 2025 giselle-01. All rights reserved</h3>
     </footer>
 
+<!--URL del JavaScript que le otorgará funcionalidad a la página-->
     <script src="./main.js"></script>
 </body>
 </html>
